@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "467327150792",
+    "project_id": "getx-food-recipe",
+    "storage_bucket": "getx-food-recipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467327150792:android:760aff26b472566d2113fd",
+        "android_client_info": {
+          "package_name": "com.example.getx_food_recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467327150792-rj73u58gp8bqtasisu96thopqmovu46b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcTfaEyVv1r1O_j355GmUwqTsTust1E_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467327150792-rj73u58gp8bqtasisu96thopqmovu46b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

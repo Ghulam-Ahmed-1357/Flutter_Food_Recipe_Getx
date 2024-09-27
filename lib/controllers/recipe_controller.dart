@@ -22,10 +22,12 @@ class RecipeController extends GetxController {
 
   bool isVisible = true;
 
+  // for login
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final loginFormKey = GlobalKey<FormState>();
 
+  //  for signup
   final emailcontroller = TextEditingController();
   final passwordcontroller = TextEditingController();
   final confirmpasswordcontroller = TextEditingController();
@@ -129,7 +131,6 @@ class RecipeController extends GetxController {
     );
     favoriteRecipes.refresh();
     recipesList.refresh();
-    // }
   }
 
   // Fetch data
@@ -182,6 +183,7 @@ class RecipeController extends GetxController {
 
           Navigator.pushAndRemoveUntil(context,
               MaterialPageRoute(builder: ((context) => Login())), (_) => false);
+          passwordController.clear();
         } else {
           Util.showError(context, "Password do not match!");
         }

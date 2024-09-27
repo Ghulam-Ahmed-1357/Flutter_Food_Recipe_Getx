@@ -47,8 +47,12 @@ class ChangePassword extends StatelessWidget {
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return "Please enter your current password";
+                      } else if (controller.currentPasswordController.text !=
+                          controller.passwordController.text) {
+                        return "Wrong password";
+                      } else {
+                        return null;
                       }
-                      return null;
                     },
                   ),
                 ),

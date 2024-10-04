@@ -8,6 +8,7 @@ import 'package:getx_food_recipe/controllers/recipe_controller.dart';
 class Signup extends StatelessWidget {
   Signup({super.key});
   RecipeController controller = Get.put(RecipeController());
+  final signupFormKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +22,7 @@ class Signup extends StatelessWidget {
         ),
         body: Stack(fit: StackFit.expand, children: <Widget>[
           Form(
-            key: controller.signupFormKey,
+            key: signupFormKey,
             child: Container(
               height: double.infinity,
               color: Color.fromARGB(255, 77, 75, 75),
@@ -207,7 +208,7 @@ class Signup extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {
                           bool isValid =
-                              controller.signupFormKey.currentState!.validate();
+                              signupFormKey.currentState!.validate();
                           if (isValid) {
                             controller.userSignup(context);
                           }

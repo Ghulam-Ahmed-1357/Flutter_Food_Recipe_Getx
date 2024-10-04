@@ -25,13 +25,11 @@ class RecipeController extends GetxController {
   // for login
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  final loginFormKey = GlobalKey<FormState>();
 
   //  for signup
   final emailcontroller = TextEditingController();
   final passwordcontroller = TextEditingController();
   final confirmpasswordcontroller = TextEditingController();
-  final signupFormKey = GlobalKey<FormState>();
 
   final currentPasswordController = TextEditingController();
   final newPasswordController = TextEditingController();
@@ -168,6 +166,7 @@ class RecipeController extends GetxController {
   Future<void> changePassword(BuildContext context) async {
     if (changePasswordFormKey.currentState!.validate()) {
       try {
+        user = auth.currentUser; // Initialize the current user
         String email = user!.email!;
 
         AuthCredential credential = EmailAuthProvider.credential(
@@ -192,8 +191,8 @@ class RecipeController extends GetxController {
       }
     }
   }
-
-  @override
+  
+   @override
   void onInit() {
     super.onInit();
     user = auth.currentUser; // Initialize the current user

@@ -1,0 +1,11 @@
+Authentication is done through firebase. 
+
+After agreeing to terms and conditions you will be navigated to the recipes list. 
+
+It is a recipe app in which you can add recipes as your favorite recipes and you can also delete favorite recipes from favorite recipes list. 
+
+There is a drawer in the top left of the page through which you can navigate to other pages.
+
+In the top right there is a setting icon on tapping it you will be navigated to the setting page from where you can navigate to other pages include change password, about page, contact etc. 
+
+You can also change your password. After changing password you will be required to login again.
